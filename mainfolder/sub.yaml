@@ -1,0 +1,9 @@
+---
+- name: sub_file
+  hosts: 127.0.0.1
+  become: yes
+  tasks:
+    - name: git branch
+      shell : |
+        git status
+        git branch
